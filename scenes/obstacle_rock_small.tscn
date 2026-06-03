@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://obs_rock_small"]
+
+[ext_resource type="Script" path="res://scripts/obstacle.gd" id="1_obs"]
+
+[sub_resource type="RectangleShape2D" id="rect_obs"]
+size = Vector2(26, 36)
+
+[node name="ObstacleRockSmall" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1_obs")
+obstacle_type = "rock_small"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(18, 22)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(18, 24)
+shape = SubResource("rect_obs")

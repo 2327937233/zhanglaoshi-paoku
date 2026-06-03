@@ -1,0 +1,24 @@
+{
+  "image": "res://assets/zhanglaoshi_sprite_sheet_aligned.png",
+  "columns": 8,
+  "rows": 4,
+  "frame_width": 256,
+  "frame_height": 256,
+  "frame_count": 32,
+  "animations": {
+    "idle": [0, 1],
+    "start_run": [2, 3],
+    "run": [4, 5, 6, 7, 8, 9, 10, 11],
+    "hard_stop": [12, 13],
+    "jump_crouch": [14, 15],
+    "takeoff": [16, 17],
+    "jump_up": [18, 19],
+    "apex": [20],
+    "fall": [21, 22],
+    "land": [23, 24],
+    "crouch": [25],
+    "slide": [26, 27],
+    "hurt": [28, 29],
+    "victory": [30, 31]
+  }
+}

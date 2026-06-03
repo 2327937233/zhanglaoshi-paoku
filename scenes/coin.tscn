@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://coin_scene"]
+
+[ext_resource type="Script" path="res://scripts/coin_item.gd" id="1_coin"]
+
+[sub_resource type="CircleShape2D" id="circle_coin"]
+radius = 20.0
+
+[node name="Coin" type="Area2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_coin")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("circle_coin")

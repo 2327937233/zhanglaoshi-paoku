@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://obs_bird"]
+
+[ext_resource type="Script" path="res://scripts/obstacle.gd" id="1_obs"]
+
+[sub_resource type="RectangleShape2D" id="rect_obs"]
+size = Vector2(24, 250)
+
+[node name="ObstacleBird" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1_obs")
+obstacle_type = "bird"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(23, 260)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(23, 135)
+shape = SubResource("rect_obs")
